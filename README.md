@@ -2,11 +2,13 @@
 
 ## Project Overview
 
-This project demonstrates AWS CloudOps for monitoring infrastructure, detecting incidents, sending alerts, and automating operations.
+This project aims to demonstrate practical AWS CloudOps workflows for infrastructure monitoring, incident detection, alert notifications, and operational automation.
+
+The goal is to build a documented, version-controlled project using AWS services and Terraform.
 
 ## Technologies
 
-- AWS VPC
+- Amazon VPC
 - AWS IAM
 - AWS Lambda
 - Amazon CloudWatch
@@ -16,14 +18,21 @@ This project demonstrates AWS CloudOps for monitoring infrastructure, detecting 
 
 ## Planned Features
 
-- Secure AWS networking with VPC and security groups
-- Least-privilege IAM roles and permissions
-- CloudWatch metrics, logs, alarms, and dashboards
-- Lambda-based incident handling and safe remediation
-- SNS email notifications
-- Terraform infrastructure provisioning
-- Documentation and testing
+- Configure a VPC and security groups
+- Apply least-privilege IAM permissions
+- Monitor infrastructure using CloudWatch metrics, logs, and alarms
+- Use Lambda for predefined operational tasks
+- Send incident notifications through SNS
+- Define infrastructure using Terraform
+- Document configuration, testing, and results
 
 ## Architecture
 
 EC2 / AWS Infrastructure → CloudWatch Alarm → AWS Lambda → SNS Notification
+
+## Repository Structure
+
+- `docs/` — Architecture and design documentation
+- `lambda/` — Lambda documentation and future function code
+- `screenshots/` — Project screenshots and evidence
+- `terraform/` — Terraform documentation and future infrastructure code
