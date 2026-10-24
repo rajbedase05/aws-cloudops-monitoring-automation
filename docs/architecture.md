@@ -6,11 +6,23 @@ The purpose of this project is to demonstrate AWS CloudOps monitoring, incident 
 
 ## 2. Architecture Flow
 
-1. Amazon EC2 runs a sample workload.
-2. Amazon CloudWatch monitors EC2 metrics.
-3. A CloudWatch alarm detects a defined threshold breach.
-4. AWS Lambda performs a predefined operational action.
-5. Amazon SNS sends an email notification to the CloudOps engineer.
+
+## Architecture Flow
+
+EC2 Infrastructure
+       |
+       v
+CloudWatch Alarm
+       |
+       v
+Amazon EventBridge
+       |
+       v
+AWS Lambda
+       |
+       v
+Amazon SNS Notification
+
 
 ## 3. AWS Services
 
